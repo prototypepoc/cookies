@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Consent Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+    </header>
+    <main>
+        <p>Your content goes here. Based on cookie settings, the content will adjust accordingly.</p>
+    </main>
+    <div id="cookie-consent-modal" class="modal">
+        <div class="modal-content">
+            <h2>Cookie Consent</h2>
+            <p>We use cookies to enhance your experience. You can manage your cookie preferences below.</p>
+            <div>
+                <label>
+                    <input type="checkbox" id="functional-cookies" checked>
+                    Functional Cookies
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" id="analytics-cookies">
+                    Analytics Cookies
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" id="advertising-cookies">
+                    Advertising Cookies
+                </label>
+            </div>
+            <div class="modal-buttons">
+                <button id="accept-all">Accept All</button>
+                <button id="manage-settings">Manage Settings</button>
+            </div>
+        </div>
+    </div>
+    <button id="floating-button" class="floating-button" style="display: none;">Save Changes</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
